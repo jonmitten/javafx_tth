@@ -6,8 +6,11 @@ import javafx.scene.Group;
 // import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -21,13 +24,21 @@ public class Main extends Application {
         // Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         Group root = new Group();
         Text txt = new Text("Sup?");
+        txt.setFont(new Font("Papyrus", 80));
+        Label label = new Label("Name: ");
+        GridPane grid = new GridPane();
         TextField nameFld = new TextField();
         Button btn = new Button();
+        grid.add(label, 0, 0 );
+        txt.setY(60);
+        grid.setHgap(20);
+        grid.add(nameFld, 1, 0);
         btn.setText("Say S'up");
         btn.setOnAction(evt -> System.out.printf("Sup, %s!%n", nameFld.getText()));
-        txt.setY(60);
+        grid.add(btn, 1, 1);
+        // grid.setGridLinesVisible(true);
         VBox box = new VBox();
-        box.getChildren().addAll(txt, nameFld, btn);
+        box.getChildren().addAll(txt, grid);
         root.getChildren().add(box);
         primaryStage.setTitle("Sup App");
         /*
