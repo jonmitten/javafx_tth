@@ -14,11 +14,12 @@
     <Label text="First Name:"
         GridPane.columnIndex="0"
         GridPane.rowIndex="1" />
-    <TextField
+    <TextField fx:id="firstName"
         GridPane.columnIndex="1"
         GridPane.rowIndex="1" />
     <Button text="Say S'Up!"
-        GridPane.rowIndex="2"
-        GridPane.columnIndex="1"
-        GridPane.halignment="RIGHT"/>
+            onAction="#handleSaySup"
+            GridPane.rowIndex="2"
+            GridPane.columnIndex="1"
+            GridPane.halignment="RIGHT"/>
 </GridPane>
