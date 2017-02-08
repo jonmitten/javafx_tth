@@ -82,3 +82,13 @@ CSS can be used with FXML.
 Inline styling can be used as it is with HTML. They can also be imported as external
 stylesheets, as would be expected for most large-scale applications.
 [JavaFX CSS Reference can be researched here.](https://docs.oracle.com/javafx/2/api/javafx/scene/doc-files/cssref.html) 
+
+####Resources
+
+Resources reference directories are treated as special directories by the Java compiler, 
+and acts as a repository for external-to-Java resources.
+
+Creating a new directory and setting it as a Resources Root in IntelliJ IDEA. 
+
+Inside the resources directory we can make a new directory for, example, FXML, and store all 
+our FXML files in it. 

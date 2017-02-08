@@ -16,7 +16,7 @@ public class Main extends Application {
         * We'll come back to the Parent object later
         **/
 
-        Parent root = FXMLLoader.load(getClass().getResource("../../resources/fxml/sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/sample.fxml"));
 
         // Group root = new Group();
         /*
