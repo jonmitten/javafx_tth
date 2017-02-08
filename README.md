@@ -52,3 +52,20 @@ the Stage as an argument.
 A very simple thing we can start practicing with is a root node, so we set up 
 `Group root = new Group`.
 
+####Grids
+
+Grids are used to help align object on a stage. 
+
+####Separating the Layout
+
+Helping to make sure that it's easy to figure out how layout is presented in code, 
+there are tools to make use of. 
+
+XML is used a lot in Java, as is HTML.
+
+Coming from a background that includes HTML, this is going to be pretty straight forward. 
+
+The FXMLLoader class that we commented out in previous exercises, is that loader
+to import XML as a layout structure markup. 
+
+FXML is the JavaFX-specific XML doctype. 
