@@ -2,8 +2,10 @@ package sample;
 
 import javafx.application.Application;
 // import javafx.fxml.FXMLLoader;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
 // import javafx.scene.Parent;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -21,9 +23,15 @@ public class Main extends Application {
         /*
         * We'll come back to the Parent object later
         **/
-        // Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        Group root = new Group();
-        Text txt = new Text("Sup?");
+
+        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+
+        // Group root = new Group();
+        /*
+        sets the scene height and width... just like the Canvas object in
+        HTML or the old-school scene object from ActionScript
+        */
+    /*    Text txt = new Text("Sup?");
         txt.setFont(new Font("Papyrus", 80));
         Label label = new Label("Name: ");
         GridPane grid = new GridPane();
@@ -39,12 +47,8 @@ public class Main extends Application {
         // grid.setGridLinesVisible(true);
         VBox box = new VBox();
         box.getChildren().addAll(txt, grid);
-        root.getChildren().add(box);
+        root.getChildren().add(box);*/
         primaryStage.setTitle("Sup App");
-        /*
-        sets the scene height and width... just like the Canvas object in
-        HTML or the old-school scene object from ActionScript
-        */
         primaryStage.setScene(new Scene(root, 300, 275));
         primaryStage.show();
     }
