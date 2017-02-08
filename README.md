@@ -69,3 +69,16 @@ The FXMLLoader class that we commented out in previous exercises, is that loader
 to import XML as a layout structure markup. 
 
 FXML is the JavaFX-specific XML doctype. 
+
+####Controller
+
+With the MVC paradigm, the FXML acts as the view, and there is a controller class
+that is made to handle the events and actions. The FXML will namespace an ID and then call to a 
+controller method with the onAction attribute.
+
+####Styling
+
+CSS can be used with FXML. 
+Inline styling can be used as it is with HTML. They can also be imported as external
+stylesheets, as would be expected for most large-scale applications.
+[JavaFX CSS Reference can be researched here.](https://docs.oracle.com/javafx/2/api/javafx/scene/doc-files/cssref.html) 
